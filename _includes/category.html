@@ -1,0 +1,46 @@
+{% capture categories %}
+{% for cat in site.categories %}
+{{ cat[0] }}
+{% endfor %}
+{% endcapture %}
+{% assign sortedcategories = categories | split:' ' | sort %}
+
+{% for cat in sortedcategories %}
+<h3 id="{{ cat }}">{{ cat }}</h3>
+<ul>
+    {% for post in site.categories[cat] %}
+    <li>
+        {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+
+{% capture tags %}
+{% for tag in site.tags %}
+{{ tag[0] }}
+{% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | split:' ' | sort %}
+
+{% for tag in sortedtags %}
+<h3 id="{{ tag }}">{{ tag }}</h3>
+<ul>
+    {% for post in site.tags[tag] %}
+    <li>
+        {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endfor %}
+
+<!-- <h1>{{ page.tag }}</h1>
+
+<ul>
+    {% for post in site.tags[page.tag] %}
+    <li>
+        {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul> -->

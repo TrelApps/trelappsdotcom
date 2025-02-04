@@ -1,0 +1,65 @@
+title: "TrelApps"
+author: ""
+description: "Boring Applications"
+permalink: pretty
+paginate: 20
+baseurl: ''
+#lang: "en"
+#excerpt_separator: "\n\n\n"
+#date_format: "%B %d, %Y"
+
+# About/contact
+author:
+  name:              TremorScript
+  url:               https://tremorscript.com
+  email:             tremorscrip@gmail.com
+
+# Layout
+
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.md"}
+  - {file: "about.md"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:tremorscript@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/tremorscript"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/trelston/"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+theme: minima
+plugins:
+  - asciidoctor-diagram
+  - jekyll-asciidoc
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-plantuml
+  - jekyll-seo-tag
+
+keep_files:
+  - images
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+   source-highlighter: pygments
+   pygments-css: class
+   pygments-style: monokai 
+   imagesdir: /images
+   stylesdir: assets/css
+   icons: font
+   includedir: assets/puml
+feed:
+  excerpt_only: true
+  tags: true
+  posts_limit: 50
