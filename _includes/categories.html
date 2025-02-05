@@ -1,9 +1,0 @@
-<article>
-    <strong>Browse by topics</strong>
-    {% for cat in site.categories %}
-    <a href="/topics/#{{ cat[0] }}" target="_blank">{{ cat[0] }} ({{ cat[1].size }})</a>
-    {% endfor %}
-    {% for cat in site.tags %}
-    <a href="/topics/#{{ cat[0] }}" target="_blank">{{ cat[0] }} ({{ cat[1].size }})</a>
-    {% endfor %}
-</article>

@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@mermaid-js/mermaid-cli": "^10.1.0",
-    "highlight.js": "^11.7.0"
-  }
-}
