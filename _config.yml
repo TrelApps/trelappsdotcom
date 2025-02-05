@@ -1,6 +1,6 @@
 title: "TrelApps"
 author: ""
-description: "Boring Applications"
+description: "Fast, Reliable and Open Applications"
 permalink: pretty
 paginate: 20
 baseurl: ''
@@ -26,13 +26,13 @@ minimal: false             # use a dark header
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.md"}
   - {file: "about.md"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  #- {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:tremorscript@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/tremorscript"}
-  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/trelston/"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  #- {title: Github, icon: github, url: "https://github.com/tremorscript"}
+  #- {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/trelston/"}
+  #- {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
