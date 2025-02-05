@@ -9,7 +9,7 @@ layout: page1
 - A few common extension methods for Assembly, String and Process classes.
 
 ### License
-- GNU Lesser General Public License v2.1(https://github.com/TrelApps/TrelApps.CSharp.Extensions/blob/main/LICENSE)
+- [GNU Lesser General Public License v2.1](https://github.com/TrelApps/TrelApps.CSharp.Extensions/blob/main/LICENSE)
 
 
 ## [TrelApps.MoveDb](https://github.com/TrelApps/TrelApps.MoveDb){:target="_blank"}
